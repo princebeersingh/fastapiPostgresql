@@ -1,1 +1,1 @@
-#this is a simple crud api application using fastapi and postgresql
+$$this is a simple crud api application using fastapi and postgresql$$
