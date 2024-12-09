@@ -14,6 +14,7 @@ class Post(BaseModel):
       published: bool = True
       rating: Optional[int] = None
 
+
 my_posts =[{"title":"title 1", "content":"content 1","id":1},{"title":"title 2", "content":"content 2","id":2},{"title":"title 3", "content":"content 3","id":3},{"title":"title 4", "content":"content 4","id":4}]
 
 def find_post(id):
@@ -51,9 +52,13 @@ def get_posts(id: int):
       return {"post details":post}
 
 
-# @app.put("/posts/{id}")
-# def update_posts():
-#       return{}
+@app.put("/posts/{id}")
+def update_posts(id: int, post: Post):
+      
+
+      return {"message":}
+
+      
 
 def find_post_index(id):
       for i, p in enumerate(my_posts):
